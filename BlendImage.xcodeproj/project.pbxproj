@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		F85F0B2F212A3A9D00D6D491 /* BlendModeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F85F0B2E212A3A9D00D6D491 /* BlendModeButton.swift */; };
+		F866F4CA212AF24400DFA4B4 /* Photos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F866F4C9212AF24400DFA4B4 /* Photos.framework */; };
 		F8D81FBC212504A4001BB5EA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D81FBB212504A4001BB5EA /* AppDelegate.swift */; };
 		F8D81FBE212504A4001BB5EA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D81FBD212504A4001BB5EA /* ViewController.swift */; };
 		F8D81FC1212504A4001BB5EA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8D81FBF212504A4001BB5EA /* Main.storyboard */; };
@@ -18,6 +19,7 @@
 
 /* Begin PBXFileReference section */
 		F85F0B2E212A3A9D00D6D491 /* BlendModeButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlendModeButton.swift; sourceTree = "<group>"; };
+		F866F4C9212AF24400DFA4B4 /* Photos.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Photos.framework; path = System/Library/Frameworks/Photos.framework; sourceTree = SDKROOT; };
 		F8D81FB8212504A4001BB5EA /* BlendImage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BlendImage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8D81FBB212504A4001BB5EA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F8D81FBD212504A4001BB5EA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -33,17 +35,27 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F866F4CA212AF24400DFA4B4 /* Photos.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F866F4C8212AF24400DFA4B4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F866F4C9212AF24400DFA4B4 /* Photos.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		F8D81FAF212504A4001BB5EA = {
 			isa = PBXGroup;
 			children = (
 				F8D81FBA212504A4001BB5EA /* BlendImage */,
 				F8D81FB9212504A4001BB5EA /* Products */,
+				F866F4C8212AF24400DFA4B4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};

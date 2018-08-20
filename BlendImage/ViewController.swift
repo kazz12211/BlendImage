@@ -79,7 +79,8 @@ class ViewController: UIViewController {
     }
     
     @IBAction func saveToPhotoAlbum(_ sender: Any) {
-        guard let imageData: Data = UIImageJPEGRepresentation(composedImageView.image!, 1.0) else { return }
+        guard let image = composedImageView.image else { return }
+        guard let imageData: Data = UIImageJPEGRepresentation(image, 1.0) else { return }
         PHPhotoLibrary.shared().performChanges({
             let creationRequest = PHAssetCreationRequest.forAsset()
             creationRequest.addResource(with: .photo, data: imageData, options: nil)
